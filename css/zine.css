@@ -1,0 +1,52 @@
+.zine img.qr-code {
+  display: block;
+  margin: 0 auto;
+  padding: 40px 20px;
+  width: 50mm;
+}
+
+.zine > article {
+  display: block;
+  position: relative;
+  width: 75mm;
+  height: 105mm;
+  padding: 4mm;
+  overflow: hidden;
+}
+
+.zine-page-footer {
+  position: absolute;
+  bottom: 4mm;
+  left: 4mm;
+  right: 4mm;
+}
+
+img.zine-page-footer.zine-page-footer-center {
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+}
+
+.zine-page-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: calc(100% - 8mm);
+}
+
+.zine > article.cover-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.zine article p {
+  margin: 10px 0;
+}
+
+.zine article img {
+  max-width: 100%;
+}

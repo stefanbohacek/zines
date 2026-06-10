@@ -1,0 +1,47 @@
+body {
+  padding: 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  body {
+    padding: 2rem;
+  }
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+main {
+  flex: 1;
+}
+
+a:has(.nb-card) {
+  display: flex;
+}
+
+a:has(.nb-card) .nb-card {
+  width: 100%;
+}
+
+.nb-card-image {
+  object-fit: contain;
+  height: auto;
+}
+
+footer p:last-of-type {
+  margin-bottom: 0;
+}
+
+a:has(.nb-card),
+a:has(.nb-card):hover {
+  text-decoration: none;
+  color: var(--nb-primary);
+}
+
+.nb-card.zine-card {
+  max-width: 283px;
+}

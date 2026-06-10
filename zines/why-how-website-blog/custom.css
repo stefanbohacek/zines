@@ -1,0 +1,89 @@
+.testimonials{
+  padding: 6mm !important;
+}
+
+.testimonials::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/zines/why-how-website-blog/images/ZombieingDoodle-Shapes.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.05;
+  print-color-adjust: exact;
+}
+
+.testimonials p {
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.testimonials p.handwritten:nth-of-type(even) {
+  text-align: right;
+}
+
+.zine {
+  font-family: "Nimbus Mono PS", "Courier New", monospace;
+  font-weight: normal;
+}
+
+h1,
+h2 {
+  font-family:
+    ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+    "DejaVu Sans Mono", monospace;
+  font-weight: normal;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+blockquote p:not(:last-of-type) {
+  text-align: right;
+  font-size: 1.1rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-family:
+    "Segoe Print", "Bradley Hand", Chilanka, TSCu_Comic, casual, cursive;
+  font-weight: normal;
+  display: inline-block;
+  transform: rotate(4deg) translate(140px, 0);
+}
+
+img.zine-page-footer.sit-reading-doodle {
+  width: 58mm;
+  right: 0;
+  left: auto;
+}
+
+img.zine-page-footer {
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+article ul {
+  padding-left: 1rem;
+}
+
+img.joe-scott-mundane-youtube-qr-code {
+  max-width: 30% !important;
+  display: block;
+  margin: 10px auto 2rem;
+}
+
+article:has(.joe-scott-mundane-youtube-qr-code) p {
+  margin-bottom: 0;
+}
+
+article:has(.joe-scott-mundane-youtube-qr-code) .zine-page-footer {
+  margin-bottom: -10px;
+}
+
+@media print {
+  #zine-howto-link {
+    display: none;
+  }
+}
