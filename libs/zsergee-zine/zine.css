@@ -20,7 +20,8 @@
 		margin: 2rem;
 	}
 	.zine::before {
-		content: "This is a micro-zine 🗞️. You can read it online, or 🖨️ print, ✂️ cut and 📃 fold it!";
+		/* content: "This is a micro-zine 🗞️. You can read it online, or 🖨️ print, ✂️ cut and 📃 fold it!"; */
+		content: "Print this page as a micro-zine! See below for instructions on how to ✂️ cut and 📃 fold it.";
 		/*position: fixed;*/
 		/*display: block;*/
 		/*right: 1rem;*/
